@@ -139,7 +139,9 @@ def get_hh(split: str, silent: bool = False, cache_dir: str = None) -> Dict[str,
        For this dataset, the sft_target is just the chosen response.
     """
     print(f'Loading HH dataset ({split} split) from Huggingface...')
-    dataset = datasets.load_dataset('Anthropic/hh-rlhf', split=split, cache_dir=cache_dir)
+    # dataset = datasets.load_dataset('/home/xiang_wenkai/direct-preference-optimization/.cache/xiang_wenkai/hh', split='test')
+    dataset = datasets.load_dataset('/cluster/home/wenkai/direct-preference-optimization/cache_data/hh',split='test')
+    # dataset = datasets.load_dataset('Anthropic/hh-rlhf', split=split, cache_dir=cache_dir)
     print('done')
 
     def split_prompt_and_responses(ex):

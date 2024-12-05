@@ -104,6 +104,7 @@ def main(config: DictConfig):
     
     if 'FSDP' in config.trainer:
         world_size = torch.cuda.device_count()
+        # world_size=2
         print('starting', world_size, 'processes for FSDP training')
         soft, hard = resource.getrlimit(resource.RLIMIT_NOFILE)
         resource.setrlimit(resource.RLIMIT_NOFILE, (hard, hard))

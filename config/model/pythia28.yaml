@@ -1,5 +1,9 @@
-name_or_path: EleutherAI/pythia-2.8b
-tokenizer_name_or_path: null
+#name_or_path: EleutherAI/pythia-2.8b
+#name_or_path: /home/xiang_wenkai/direct-preference-optimization/.cache/xiang_wenkai/anthropic_dpo_pythia28
+name_or_path: /cluster/home/wenkai/direct-preference-optimization/cache_model/anthropic_dpo_pythia28
+#tokenizer_name_or_path: null
+#tokenizer_name_or_path: /home/xiang_wenkai/direct-preference-optimization/.cache/xiang_wenkai/anthropic_dpo_pythia28
+tokenizer_name_or_path: /cluster/home/wenkai/direct-preference-optimization/cache_model/anthropic_dpo_pythia28
 archive: null
 block_name: GPTNeoXLayer
 
